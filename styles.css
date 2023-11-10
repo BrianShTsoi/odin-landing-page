@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', arial;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html, body {
@@ -41,8 +41,7 @@ div {
     align-items: center;
 }
 .header-link {
-    /* width: 80px; */
-    width: 10%;
+    width: 80px;
 
     text-align: center;
     font-size: 18px;
@@ -66,7 +65,7 @@ div {
 }
 .hero-main-text {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #F9FAF8;
 }
 .hero-secondary-text {
@@ -77,6 +76,7 @@ div {
 .useless-button {
     margin-top: 10px;
     color: white;
+    font-size: 18px;
     background-color: #3882F6;
     border-radius: 5px;
     font-weight: bold;
@@ -89,15 +89,81 @@ div {
 
 .information {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.info-header {
+    height: 15%;
+    padding-top: 10px;
+    /* flex: 0 1 auto; */
+
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.theorems-container {
+    /* flex: 1; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.theorem {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.theorem-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 25% 25%;
+    flex: 0 0 auto;
+
+
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    margin: 5px;
+
+}
+.theorem-description {
+    height: 10%;
+    flex: auto;
+    text-align: center;
+    margin: 2px;
+
+    color: grey;
+}
+
 .quote {
     background-color: #E5E7EB;
-}
-.call-to-action-container {
-    background-color: white;
+    padding-top: 10%;
+
     height: 300px;
 }
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    display: block;
+    height: 50px;
+    color: #1F2937;
+
+}
+.quote-person {
+    display: block;
+    height: 50px;
+    text-align: end;
+    font-size: 20px;
+}
 .footer {
+    padding: 10px;
+    color: white;
     background-color: #1F2937;
     height: 80px;
+    text-align: center;
 }
