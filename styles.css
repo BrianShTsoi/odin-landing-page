@@ -52,7 +52,41 @@ div {
 
 .hero {
     background-color: #1F2937;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5%;
 }
+.hero-text-container {
+    width: 50%;
+    flex: 1 1 auto;
+    height: 100%;
+}
+.hero-text-container > * {
+    display: inline-block;
+}
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+.hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
+}
+.useless-button {
+    margin-top: 10px;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+}
+.theorems-img {
+    width: 50%;
+    flex: 1 1 auto;
+}
+
 .information {
     background-color: white;
 }
